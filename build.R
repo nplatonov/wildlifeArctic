@@ -1,0 +1,6 @@
+bookdown::render_book('index.Rmd',params=list(md_lang='ru'))
+bookdown::render_book('index.Rmd',params=list(md_lang='en'))
+dst <- rmarkdown::render('index.Rmd',encoding='utf8')
+file.rename(dst,'./web/index.html')
+unlink('assets',recursive=TRUE)
+browseURL("./web/index.html")

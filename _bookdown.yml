@@ -1,0 +1,10 @@
+book_filename: "wildlifeArctic"
+cover-image: "https://sevin.000webhostapp.com/wildlifeArctic/aes2017.gif"
+output_dir: web
+rmd_files: ["main.Rmd"]
+github_repo: nplatonov/wildlifeArctic
+language:
+   ui:
+      chapter_name: ""
+      table_name: ""
+delete_merged_file: true

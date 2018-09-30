@@ -1,0 +1,54 @@
+---
+title: "Photos"
+output:
+   html_document:
+      self_contained: true
+---
+
+
+```{r photo0,echo=FALSE, results='asis', eval=TRUE}
+if (!exists("md_lang")) {
+   cat("\n\n# Dummy header\n\n")
+   md_lang <- "ru"
+}
+# print(md_lang)
+```
+
+<div id="flickrembed"></div>
+
+<script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157688766335621&sort=0&by=album&theme=tiles_justified&scale=fit&limit=200&skin=default&autoplay=true'>
+</script>
+
+<small style="display: block; text-align: center; margin: 0 auto;">
+<a href='https://flic.kr/s/aHsm8iThUn'>This album</a> is powered by <a href="https://flickrembed.com">flickr embed</a>.
+</small>
+
+```{r photo1,echo=FALSE, results='asis', eval=TRUE}
+cat(paste0("\n\n## ",switch(md_lang,ru="Заседания (Игорь Поспелов)","Meetings (Igor Pospelov)"),"{- #photo1-",md_lang,"}\n\n"))
+```
+<div id="flickrembed"></div>
+<script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157687817042552&sort=0&by=album&theme=tiles_justified&scale=fit&limit=200&skin=default&autoplay=false'>
+</script>
+<small style="display: block; text-align: center; margin: 0 auto;">
+<a href='https://flic.kr/s/aHsm6RZV9u'>This album</a> is powered by <a href="https://flickrembed.com">flickr embed</a>.
+</small>
+
+```{r photo2,echo=FALSE, results='asis', eval=TRUE}
+cat(paste0("\n\n## ",switch(md_lang,ru="Банкет (Игорь Поспелов)","Banquet (Igor Pospelov)"),"{- #photo2-",md_lang,"}\n\n"))
+```
+<div id="flickrembed"></div>
+<script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157689719981484&sort=0&by=album&theme=tiles_justified&scale=fit&limit=99&skin=default&autoplay=false'>
+</script>
+<small style="display: block; text-align: center; margin: 0 auto;">
+<a href='https://flic.kr/s/aHsm9L9YAq'>This album</a> is powered by <a href="https://flickrembed.com">flickr embed</a>.
+</small>
+
+```{r photo3,echo=FALSE, results='asis', eval=TRUE}
+cat(paste0("\n\n## ",switch(md_lang,ru="Экскурсия (Игорь Поспелов)","Excursion (Igor Pospelov)"),"{- #photo3-",md_lang,"}\n\n"))
+```
+<div id="flickrembed"></div>
+<script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157689719967734&sort=0&by=album&theme=tiles_justified&scale=fit&limit=99&skin=default&autoplay=false'>
+</script>
+<small style="display: block; text-align: center; margin: 0 auto;">
+<a href='https://flic.kr/s/aHsm9L9Uvm'>This album</a> is powered by <a href="https://flickrembed.com">flickr embed</a>.
+</small>

@@ -1,0 +1,11 @@
+---
+output:
+   html_document:
+      self_contained: true
+---
+
+# Научные направления {- #subject}
+
+```{r abstract, results='asis', echo=FALSE, eval=TRUE}
+source("subject.R")
+```

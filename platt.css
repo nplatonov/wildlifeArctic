@@ -1,0 +1,76 @@
+<!-- assets/gitbook-2.6.7/css/plugin-fontsettings.css -->
+
+.plhidden h2
+{
+   color: #005CAE;
+}
+.plhidden h3
+{
+   color: transparent;
+}
+.plhidden h1
+{
+   color: red;
+}
+title h1
+{
+   color: red;
+}
+h1.zzztitle {
+  font-size: 38px;
+  color: DarkRed;
+}
+div.GREEN {
+   font-weight: bold;
+   color: green;
+}
+div.hideh1 {
+   color: blue;
+}
+
+.book.font-size-0 .book-body .page-inner section {
+  font-size: 1.1rem;
+}
+.book.font-size-1 .book-body .page-inner section {
+  font-size: 1.2rem;
+}
+.book.font-size-2 .book-body .page-inner section {
+  font-size: 1.3rem;
+}
+.book.font-size-3 .book-body .page-inner section {
+  font-size: 1.4rem;
+}
+.book.font-size-4 .book-body .page-inner section {
+  font-size: 1.6rem;
+}
+
+.col2 {
+  columns: 2 200px;         /* number of columns and width in pixels*/
+  -webkit-columns: 2 200px; /* chrome, safari */
+  -moz-columns: 2 200px;    /* firefox */
+  column-count: 2;
+}
+.col3 {
+  columns: 3 100px;
+  -webkit-columns: 3 100px;
+  -moz-columns: 3 100px;
+  column-count: 3;
+}
+.col4 {
+  columns: 4 100px;
+  -webkit-columns: 4 100px;
+  -moz-columns: 4 100px;
+  column-count: 4;
+}
+.col5 {
+  columns: 5 100px;
+  -webkit-columns: 5 100px;
+  -moz-columns: 5 100px;
+  column-count: 5;
+}
+.col6 {
+  columns: 6 100px;
+  -webkit-columns: 6 100px;
+  -moz-columns: 6 100px;
+  column-count: 6;
+}

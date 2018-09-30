@@ -1,0 +1,116 @@
+---
+params:
+   md_lang: "ru"
+title: "`r switch(params$md_lang,ru='Живая природа Арктики','Wildlife of the Arctic')`"
+pagetitle: "`r switch(params$md_lang,ru='Живая природа Арктики','Wildlife of the Arctic')`"
+output:
+  html_document:
+    output_dir: sss
+---
+
+```{r, echo=FALSE, include=FALSE}
+if (!exists("md_lang"))
+   md_lang <- params$md_lang #"ru"
+md_altlang <- switch(md_lang,ru="en",en="ru")
+Sys.setlocale("LC_CTYPE",switch(md_lang,ru="Russian","Russian"))
+Sys.setlocale("LC_TIME",switch(md_lang,ru="Russian","English"))
+md_title <- switch(md_lang,ru="Живая природа Арктики","Wildlife of the Arctic")
+md_subtitle <- switch(md_lang,ru="Дополнения к официальному сайту","Supplemental information")
+md_author <- switch(md_lang,ru="","")
+md_date <- switch(md_lang,ru="Обновлено:","Updated:")
+md_index <- switch(md_lang,ru="Преамбула","Preface")
+md_schedule <- switch(md_lang,ru="Программа","Program")
+md_speakers <- switch(md_lang,ru="Докладчики","Speakers")
+md_roundtable <- switch(md_lang,ru="Круглые столы","Round tables")
+md_location <- switch(md_lang,ru="Местоположение","Location")
+md_abstract <- switch(md_lang,ru="Аннотации","Abstracts")
+md_yourlanguage <- switch(md_lang,ru="In English | по-русски","По-русски | In English")
+md_switchlanguage <- switch(md_lang,ru="In English","По-русски")
+md_subject <- switch(md_lang,ru="Тематика","Subjects")
+md_photo <- switch(md_lang,ru="Фотогалерея","Photos")
+md_resolution  <- switch(md_lang,ru="Резолюция","Conclusion")
+output <- rmarkdown::all_output_formats(knitr::current_input())[1]
+isPDF <- length(grep("pdf",output))>0
+isHTML <- length(grep("html|github",output))>0
+isBOOK <- length(grep("book",output))>0
+if (!isBOOK & !isPDF & !isHTML)
+   isHTML <- TRUE
+options(md_lang=md_lang,md_isHTML=isHTML)
+```
+
+---
+date: "`r paste(md_date,format(Sys.time(),'%Y-%m-%d %H:%M'))`"
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "Everything you need (and nothing more) to start a bookdown book."
+output_dir: "qqqrrr"
+favicon: aes2017.gif
+
+---
+
+
+# `r md_index` {- #index_`r md_lang`}
+<!--  # <span style="font-size:60%">`r md_index`</span> {- #index_`r md_lang`} -->
+
+```{r preface, child=paste0("about-",md_lang,".Rmd"),eval=TRUE}
+```
+
+# `r md_subject` {- #subject_`r md_lang`}
+
+```{r subject, results='asis', echo=FALSE, eval=TRUE}
+source("subject.R",encoding="utf8")
+```
+
+# `r md_schedule` {- #schedule_`r md_lang`}
+
+```{r schedule,echo=FALSE, results='asis', eval=TRUE}
+source("schedule.R",encoding="utf8")
+```
+
+<!---->
+# `r md_speakers` {- #speakers_`r md_lang`}
+<!---->
+
+```{r speakers,echo=FALSE, results='asis', eval=TRUE}
+source("speakers.R",encoding="utf8")
+```
+<!---->
+# `r md_location` {- #location_`r md_lang`}
+<!---->
+
+```{r leafletPrepare, include=FALSE, eval=TRUE}
+source("location.R",encoding="utf8")
+```
+```{r leafletShow,echo=FALSE, eval=TRUE}
+m
+```
+
+<!---->
+# `r md_abstract` {- #abstract_`r md_lang`}
+<!---->
+
+```{r abstract, results='asis', echo=FALSE, eval=TRUE}
+source("abstract.R",encoding="utf8")
+```
+
+# `r md_resolution` {- #resolution_`r md_lang`}
+
+Текст резолюции в настоящее время формируется оргкомитетом.
+
+Conference conclusion will be available in Russian soon.
+
+# `r md_photo` {- #photo_`r md_lang`}
+
+```{r photo, child="photo.Rmd",eval=TRUE}
+```
+
+<!--
+# <span style="font-size:100%">`r md_yourlanguage`</span> {- #index}
+
+[Русский](index-ru.html)
+[English](index-en.html)
+Suomalainen
+-->
+
+# [`r md_switchlanguage`](index-`r md_altlang`.html) {- #switch-`r md_lang`}

@@ -1,0 +1,10 @@
+---
+output: dummy
+---
+
+![](https://sevin.000webhostapp.com/wildlifeArctic/aes2017.gif)
+
+
+[Продолжить по-русски](index-ru.html) &nbsp;&nbsp;&nbsp;
+[Continue in English](index-en.html)
+

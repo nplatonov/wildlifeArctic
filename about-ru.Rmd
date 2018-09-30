@@ -1,0 +1,29 @@
+<!--
+```{block, type='GREEN'}
+Добро пожаловать на нашу конференцию!
+```
+-->
+
+<iframe width="480" height="480" src="https://nplatonov.shinyapps.io/board" frameborder="0">
+</iframe>
+
+<!--
+NOTE: borders around iframe
+```{r shiny, echo=FALSE}
+knitr::include_app("https://nplatonov.shinyapps.io/board")
+```
+-->
+
+<!--
+<iframe src="https://nplatonov.shinyapps.io/board"></iframe>
+-->
+
+
+
+Эта веб-страница дополняет содержимое [официального сайта](http://onlinereg.ru/aes2017) конференции и служит для предоставления в электронном виде информации о программе конференции, докладчиках и аннотациях.
+
+Оформление выполнено в виде книге (листание страниц стрелками "влево", "вправо"). Его можно настроить под себя, выбрав значок ![](https://sevin.000webhostapp.com/wildlifeArctic/customizeA.png) на тулбаре: изменить цвет фона, тип и размер шрифта.
+
+![](https://sevin.000webhostapp.com/wildlifeArctic/customize.png)
+
+Для чтения с мобильных устройств, возможно, будет полезным использовать горизонтальную ориентацию экрана и/или в настройках отображения браузера указать использовать полную версию сайта.

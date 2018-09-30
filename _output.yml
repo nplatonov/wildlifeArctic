@@ -1,0 +1,60 @@
+bookdown::gitbook:
+  lib_dir: assets
+  keep_md: false
+  split_by: section
+  number_sections: false
+  split_bib: true
+  css: [style.css, platt.css]
+  toc_depth: 3
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: |
+        <li><center><img border=0 src="https://sevin.000webhostapp.com/wildlifeArctic/aes2017.gif"></center></li>
+      after: |
+        <li><a href="http://onlinereg.ru/aes2017">Сайт конференции | Main webpage</a></li>
+    toolbar:
+      position: static
+    edit: null
+    download: [["https://sevin.000webhostapp.com/wildlifeArctic/pdf/proceedings.pdf", "PDF"], ["", ""]]
+    search: no
+    fontsettings:
+      theme: white
+      family: sans
+      size: 3
+    sharing:
+      facebook: yes
+      twitter: yes
+      github: yes
+      google: no
+      weibo: no
+      instapper: no
+      vk: no
+      all: []
+bookdown::pdf_book:
+  keep_tex: yes
+  latex_engine: xelatex
+bookdown::epub_book:
+  toc: yes
+bookdown::tufte_html_book:
+   toc: yes
+   css: toc.css
+bookdown::html_book:
+  css: toc.css
+  toc: true
+  theme: united
+rmarkdown::html_vignette:
+  toc: false
+rmarkdown::html_document:
+  toc: true
+  toc_float: false
+  toc_depth: 2
+  self_contained: true
+  css: platt.css
+rmarkdown::github_document:
+  toc: true
+rmarkdown::word_document:
+  toc: false
+  keep_md: true
+  reference_docx: wildlifeArctic-1101a.docx

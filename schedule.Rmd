@@ -1,0 +1,16 @@
+---
+title: "Программа конференции"
+subtitle: "Обновлена: `r format(Sys.time(),'%Y-%m-%d %H:%M')`"
+output:
+  word_document:
+    toc: false
+  html_document:
+    self_contained: true
+    css: platt.css
+---
+
+# Программа {- #schedule}
+
+```{r schedule,echo=FALSE, results='asis', eval=TRUE}
+source("schedule.R")
+```
