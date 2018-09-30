@@ -12,5 +12,5 @@ output:
 # Программа {- #schedule}
 
 ```{r schedule,echo=FALSE, results='asis', eval=TRUE}
-source("schedule.R")
+source("schedule.R",encoding="utf8")
 ```

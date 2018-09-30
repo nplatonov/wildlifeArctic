@@ -10,7 +10,7 @@
       isDOC <- length(grep("word",output[[1]]))>0
    }
    else {
-      isHTML <- TRUE
+      isHTML <- !TRUE
       isDOC <- !FALSE
    }
    if (is.null(md_lang <- getOption("md_lang")))
