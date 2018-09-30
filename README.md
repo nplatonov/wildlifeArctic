@@ -1,10 +1,15 @@
 # Wildlife of the Arctic
 
+## Release
+
+https://sevin.000webhostapp.com/wildlifeArctic/
+
 ## General
 This is a mock-up to reproduce auxiliary website for the "Wildlife of the Arctic" conference,
 which has passed in Arkhangelsk, 29 October - 04 November 2017.
 This development was initialized for management of resources,
 missed of official conference website https://online.reg/aes2017.
+
 
 ## To build:
 
