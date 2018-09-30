@@ -34,4 +34,5 @@ Open `./web/index.html`
 + There is a link to https://www.shinyapps.io from main page in Russian. Please keep patience for "404" error.
 That means application (board of actual schedule) is temporally in archive mode due to limitations of Free Plan.
 See example of interface below.
-![](board-example.png)
+
+  ![](board-example.png)
